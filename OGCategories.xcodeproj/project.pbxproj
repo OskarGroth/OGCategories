@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		75359FE31E9A61890095582C /* OGCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 75359FE11E9A61890095582C /* OGCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75359FEA1E9A61980095582C /* NSAlert+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75359FE91E9A61980095582C /* NSAlert+Convenience.swift */; };
+		75359FEC1E9A61A30095582C /* AppDelegateCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75359FEB1E9A61A30095582C /* AppDelegateCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75359FDE1E9A61890095582C /* OGCategories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OGCategories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75359FE11E9A61890095582C /* OGCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OGCategories.h; sourceTree = "<group>"; };
 		75359FE21E9A61890095582C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75359FE91E9A61980095582C /* NSAlert+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAlert+Convenience.swift"; sourceTree = "<group>"; };
+		75359FEB1E9A61A30095582C /* AppDelegateCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +50,20 @@
 		75359FE01E9A61890095582C /* OGCategories */ = {
 			isa = PBXGroup;
 			children = (
+				75359FED1E9A61CA0095582C /* Categories */,
 				75359FE11E9A61890095582C /* OGCategories.h */,
 				75359FE21E9A61890095582C /* Info.plist */,
 			);
 			path = OGCategories;
+			sourceTree = "<group>";
+		};
+		75359FED1E9A61CA0095582C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				75359FE91E9A61980095582C /* NSAlert+Convenience.swift */,
+				75359FEB1E9A61A30095582C /* AppDelegateCategory.swift */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75359FEC1E9A61A30095582C /* AppDelegateCategory.swift in Sources */,
+				75359FEA1E9A61980095582C /* NSAlert+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
