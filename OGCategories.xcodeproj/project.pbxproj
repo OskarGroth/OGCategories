@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		752108DB1E9B775300BE98F1 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752108DA1E9B775300BE98F1 /* String+Localization.swift */; };
 		7535A00E1E9A65A00095582C /* OGCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 7535A00C1E9A65A00095582C /* OGCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7535A0121E9A65ED0095582C /* NSAlert+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75359FEF1E9A64A00095582C /* NSAlert+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		752108DA1E9B775300BE98F1 /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		75359FE11E9A61890095582C /* OGCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OGCategories.h; sourceTree = "<group>"; };
 		75359FE21E9A61890095582C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75359FEF1E9A64A00095582C /* NSAlert+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSAlert+Convenience.swift"; path = "Categories/NSAlert+Convenience.swift"; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		75359FED1E9A61CA0095582C /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				752108DA1E9B775300BE98F1 /* String+Localization.swift */,
 				75359FEF1E9A64A00095582C /* NSAlert+Convenience.swift */,
 			);
 			name = Categories;
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7535A0121E9A65ED0095582C /* NSAlert+Convenience.swift in Sources */,
+				752108DB1E9B775300BE98F1 /* String+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
