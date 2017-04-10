@@ -25,6 +25,10 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func otherButtonPress(_ sender: Any) {
+        sampleLabel.setStringValueAnimated(string: "Animated Number 2!")
+    }
+    
     @IBAction func buttonPress(_ sender: Any) {
         sampleLabel.setStringValueAnimated(string: "Animated!")
         perform(#selector(ViewController.timer), with: nil, afterDelay: 5)

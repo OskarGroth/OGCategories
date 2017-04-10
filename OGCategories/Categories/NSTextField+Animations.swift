@@ -15,6 +15,7 @@ public extension NSTextField {
         guard stringValue != string else {
             return
         }
+        layer?.removeAllAnimations()
         NSAnimationContext.runAnimationGroup({(context: NSAnimationContext) -> Void in
             context.duration = duration
             context.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
