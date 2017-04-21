@@ -8,20 +8,20 @@
 
 import Foundation
 
-extension NSImage {
+public extension NSImage {
     
     /// Returns the height of the current image.
-    var height: CGFloat {
+    public var height: CGFloat {
         return self.size.height
     }
     
     /// Returns the width of the current image.
-    var width: CGFloat {
+    public var width: CGFloat {
         return self.size.width
     }
     
     /// Returns a png representation of the current image.
-    var PNGRepresentation: Data? {
+    public var PNGRepresentation: Data? {
         if let tiff = self.tiffRepresentation, let tiffData = NSBitmapImageRep(data: tiff) {
             return tiffData.representation(using: .PNG, properties: [:])
         }
@@ -34,7 +34,7 @@ extension NSImage {
     ///  - parameter size: The size of the new image.
     ///
     ///  - returns: The resized copy of the given image.
-    func copy(size: NSSize) -> NSImage? {
+    public func copy(size: NSSize) -> NSImage? {
         // Create a new rect with given width and height
         let frame = NSMakeRect(0, 0, size.width, size.height)
         
@@ -65,7 +65,7 @@ extension NSImage {
     ///  - parameter size: The size of the new image.
     ///
     ///  - returns: The resized copy of the given image.
-    func resizeWhileMaintainingAspectRatioToSize(size: NSSize) -> NSImage? {
+    public func resizeWhileMaintainingAspectRatioToSize(size: NSSize) -> NSImage? {
         let newSize: NSSize
         
         let widthRatio  = size.width / self.width
@@ -85,7 +85,7 @@ extension NSImage {
     ///  - parameter size: The size of the new image.
     ///
     ///  - returns: The cropped copy of the given image.
-    func crop(size: NSSize) -> NSImage? {
+    public func crop(size: NSSize) -> NSImage? {
         // Resize the current image, while preserving the aspect ratio.
         guard let resized = self.resizeWhileMaintainingAspectRatioToSize(size: size) else {
             return nil
@@ -125,7 +125,7 @@ extension NSImage {
     ///  Saves the PNG representation of the current image to the HD.
     ///
     /// - parameter url: The location url to which to write the png file.
-    func savePNGRepresentationToURL(url: URL) throws {
+    public func savePNGRepresentationToURL(url: URL) throws {
         if let png = self.PNGRepresentation {
             try png.write(to: url, options: .atomicWrite)
         }
