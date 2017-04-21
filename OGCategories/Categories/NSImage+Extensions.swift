@@ -71,7 +71,7 @@ public extension NSImage {
         let widthRatio  = size.width / self.width
         let heightRatio = size.height / self.height
         
-        if widthRatio > heightRatio {
+        if widthRatio < heightRatio {
             newSize = NSSize(width: floor(self.width * widthRatio), height: floor(self.height * widthRatio))
         } else {
             newSize = NSSize(width: floor(self.width * heightRatio), height: floor(self.height * heightRatio))
