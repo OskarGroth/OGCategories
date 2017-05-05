@@ -9,7 +9,7 @@
 import Foundation
 import Cocoa
 
-class ProgressBarAnimation : NSAnimation {
+public class ProgressBarAnimation : NSAnimation {
     
     let indicator : NSProgressIndicator
     let initialValue : Double
@@ -23,14 +23,14 @@ class ProgressBarAnimation : NSAnimation {
         self.animationBlockingMode = .nonblockingThreaded
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         indicator = NSProgressIndicator()
         initialValue = 0
         newValue = 0
         super.init(coder: aDecoder)
     }
     
-    override var currentProgress : NSAnimationProgress {
+    override public var currentProgress : NSAnimationProgress {
         didSet {
             let delta = self.newValue - self.initialValue
             
@@ -39,9 +39,9 @@ class ProgressBarAnimation : NSAnimation {
     }
 }
 
-extension NSProgressIndicator {
+public extension NSProgressIndicator {
     
-    func animateToDoubleValue(value: Double) -> NSAnimation {
+    public func animateToDoubleValue(value: Double) -> NSAnimation {
         let animation = ProgressBarAnimation(self, newValue: value)
         animation.start()
         return animation
