@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OGCategories/Categories/NSAttributedString+HTML.swift"
+            timestampString = "514906909.718895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "stringFromHTML(html:font:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static (extension in OGCategories):__ObjC.NSAttributedString.stringFromHTML (html : Swift.String, font : __ObjC.NSFont) -&gt; Swift.Optional&lt;__ObjC.NSAttributedString&gt;"
+                  moduleName = "OGCategories"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oskar/OGCategories/OGCategories/Categories/NSAttributedString+HTML.swift"
+                  timestampString = "514906983.349843"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static (extension in OGCategories):__ObjC.NSAttributedString.stringFromHTML (html : Swift.String, font : __ObjC.NSFont) -&gt; Swift.Optional&lt;__ObjC.NSAttributedString&gt;"
+                  moduleName = "OGCategories"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oskar/OGCategories/OGCategories/Categories/NSAttributedString+HTML.swift"
+                  timestampString = "514906983.351656"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "193">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OGCategories/Categories/NSAttributedString+HTML.swift"
+            timestampString = "514907000.116985"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "stringFromHTML(html:font:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

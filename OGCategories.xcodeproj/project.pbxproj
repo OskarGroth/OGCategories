@@ -18,6 +18,7 @@
 		7535A00E1E9A65A00095582C /* OGCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 7535A00C1E9A65A00095582C /* OGCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7535A0121E9A65ED0095582C /* NSAlert+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75359FEF1E9A64A00095582C /* NSAlert+Convenience.swift */; };
 		759202D81EA9FDBA00A4A02F /* NSImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759202D71EA9FDBA00A4A02F /* NSImage+Extensions.swift */; };
+		7594462A1EBC9B3600EBDC59 /* ProgressIndicator+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759446291EBC9B3600EBDC59 /* ProgressIndicator+Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		7535A00C1E9A65A00095582C /* OGCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OGCategories.h; sourceTree = "<group>"; };
 		7535A00D1E9A65A00095582C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		759202D71EA9FDBA00A4A02F /* NSImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSImage+Extensions.swift"; path = "Categories/NSImage+Extensions.swift"; sourceTree = "<group>"; };
+		759446291EBC9B3600EBDC59 /* ProgressIndicator+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ProgressIndicator+Animation.swift"; path = "Categories/ProgressIndicator+Animation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		75359FED1E9A61CA0095582C /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				759446291EBC9B3600EBDC59 /* ProgressIndicator+Animation.swift */,
 				752108E41E9B8CEC00BE98F1 /* String+Localization.swift */,
 				75359FEF1E9A64A00095582C /* NSAlert+Convenience.swift */,
 				752108E21E9B8CD900BE98F1 /* NSTextField+Animations.swift */,
@@ -271,6 +274,7 @@
 				752108E31E9B8CD900BE98F1 /* NSTextField+Animations.swift in Sources */,
 				759202D81EA9FDBA00A4A02F /* NSImage+Extensions.swift in Sources */,
 				7535A0121E9A65ED0095582C /* NSAlert+Convenience.swift in Sources */,
+				7594462A1EBC9B3600EBDC59 /* ProgressIndicator+Animation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
