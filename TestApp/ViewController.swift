@@ -11,11 +11,12 @@ import OGCategories
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var progressBar: NSProgressIndicator!
     @IBOutlet weak var sampleLabel: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -26,15 +27,16 @@ class ViewController: NSViewController {
     }
 
     @IBAction func otherButtonPress(_ sender: Any) {
-
+        progressBar.animateToDoubleValue(value: 200)
     }
     
     @IBAction func buttonPress(_ sender: Any) {
+        progressBar.animateToDoubleValue(value: 10)
         sampleLabel.setStringValueAnimated(string: "Animated!")
         perform(#selector(ViewController.timer), with: nil, afterDelay: 5)
     }
     
-    func timer() {
+    @objc func timer() {
         print("Label now: \(sampleLabel.stringValue)")
     }
 

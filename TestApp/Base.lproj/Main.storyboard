@@ -717,9 +717,14 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="OyT-tu-J2g">
+                                <rect key="frame" x="167" y="237" width="229" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="progressBar" destination="OyT-tu-J2g" id="EcF-iB-jTv"/>
                         <outlet property="sampleLabel" destination="XF7-uI-crs" id="NIn-dq-yBn"/>
                     </connections>
                 </viewController>

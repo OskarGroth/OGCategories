@@ -30,7 +30,7 @@ public class ProgressBarAnimation : NSAnimation {
         super.init(coder: aDecoder)
     }
     
-    override public var currentProgress : NSAnimationProgress {
+    override public var currentProgress : NSAnimation.Progress {
         didSet {
             let delta = self.newValue - self.initialValue
             

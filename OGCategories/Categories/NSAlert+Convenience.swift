@@ -10,7 +10,7 @@ import Foundation
 
 public extension NSAlert {
     
-    public class func show(title: String, message: String, style: NSAlertStyle) {
+    public class func show(title: String, message: String, style: NSAlert.Style) {
         let alert = NSAlert()
         alert.messageText = title
         alert.informativeText = message
